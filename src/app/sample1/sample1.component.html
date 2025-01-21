@@ -1,0 +1,22 @@
+<div class="table-container">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Town</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of Users">
+          <td>{{ user.Id }}</td>
+          <td>{{ user.Name }}</td>
+          <td>{{ user.Town }}</td>
+          <td>{{ user.Country }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <button (click)="showReport()">Print</button>

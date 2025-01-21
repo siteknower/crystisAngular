@@ -1,0 +1,75 @@
+<div class="table-container">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th (click)="sortTable('Id')">Id</th>
+          <th (click)="sortTable('Name')">Name</th>
+          <th (click)="sortTable('Town')">Town</th>
+          <th (click)="sortTable('Country')">Country</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of Users; let i = index">
+          <td><input [(ngModel)]="user.Id" type="text" /></td>
+          <td><input [(ngModel)]="user.Name" type="text" /></td>
+          <td><input [(ngModel)]="user.Town" type="text" /></td>
+          <td><input [(ngModel)]="user.Country" type="text" /></td>
+          <td>
+            <button (click)="deleteRow(i)">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input #newId type="text" placeholder="Id" /></td>
+          <td><input #newName type="text" placeholder="Name" /></td>
+          <td><input #newTown type="text" placeholder="Town" /></td>
+          <td><input #newCountry type="text" placeholder="Country" /></td>
+          <td>
+            <!-- <button (click)="addRow(newId.value, newName.value, newTown.value, newCountry.value)">Add</button> -->
+            <button (click)="addRow(newId.value, newName.value, newTown.value, newCountry.value, [newId, newName, newTown, newCountry])">
+              Add
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div> 
+
+  <div class="groupbox-container">
+    <div class="groupbox-left">
+      <h3>Destination</h3>
+      <!-- Content for left groupbox -->
+      <div> 
+        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optscreen" />on screen </label> 
+      </div> 
+      <div> 
+        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optpaper" />on paper </label> 
+      </div>
+    </div>
+    
+    <div class="groupbox-right">
+      <h3>Formula</h3>
+      <!-- Content for right groupbox -->
+      <label>Country = Germany</label>
+      <div> <label> <input type="checkbox" [(ngModel)]="chkselected" /> include formula </label> </div>
+
+    </div>
+  </div>
+<br>
+  <div class="groupbox-container">
+    <div class="groupbox-left">
+      <h3>Sort</h3>
+      <label> Column:</label> &nbsp;&nbsp;<span class="lbl">{{currentSortColumn}} </span>  
+      <br>
+      <label> Direction:</label>&nbsp;&nbsp; <span class="lbl">{{direction}} </span> 
+      <!-- Content for left groupbox -->
+    </div>
+
+    <div class="groupbox-right2">
+      <button (click)="showReport()">Print</button>
+    </div>
+  </div>
+  
+
+

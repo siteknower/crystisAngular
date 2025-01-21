@@ -1,0 +1,27 @@
+<label>Customer</label>
+<br>
+<input [(ngModel)]="Dummy[0].Text1" type="text" />
+<br>
+
+<div class="table-container">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of InvItems">
+          <td>{{ item.Code }}</td>
+          <td>{{ item.Name }}</td>
+          <td class="right-align">{{ item.Amount }}</td>
+          <td class="right-align">{{ item.Price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <button (click)="showReport()">Print</button>

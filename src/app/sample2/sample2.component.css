@@ -1,0 +1,112 @@
+.table-container table {
+    margin: 20px;
+    max-width: 600px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-container td, .table-container th {
+    vertical-align: middle;
+    text-align: left;
+    padding: 0; 
+    height: 30px; /* This ensures a fixed height for all cells */
+    overflow: hidden; /* If you want content overflow to not affect height */
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.table-container input {
+    height: 90%; /* Matches the cell height */
+    width: 97%;
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* margin-left: 3px; */
+    padding-left: 3px;
+}
+
+.table-container button {
+    height: 75%; /* Match the cell height */
+    width: 80%; 
+    padding: 0; /* Reduce padding if too much */
+    margin: 0; /* Ensure no margins are adding height */
+    box-sizing: border-box; /* Include padding in height calculation */
+    margin-left: 5px;
+  }
+
+.table-container th {
+    text-align: left;
+    padding: 0;
+    padding-left: 3px;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    /* height is already set in the td rule above which applies to th as well */
+}
+
+/* Additional rule to ensure rows respect the cell height */
+.table-container tr {
+    display: table-row; /* This should be default, but ensuring can help */
+}
+
+
+button {
+    margin-left: auto; /* Ensure button is aligned to the right */
+    height: 30px;
+} 
+
+/* Container for both groupboxes */
+.groupbox-container {
+    margin-left: 20px;
+    max-width: 600px;
+    display: flex; /* Use flexbox to align the divs side by side */
+    justify-content: space-between; /* Space between the two divs */
+  }
+  
+  /* Style for each groupbox */
+  .groupbox-left, .groupbox-right {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 44%; /* Each div takes up 48% of the available width, leaving some space between them */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    height: 50px;
+  }
+
+ .groupbox-right2 {
+    width: 44%; /* Each div takes up 48% of the available width, leaving some space between them */
+    padding: 0;
+    height: 50px;
+    display: flex; 
+  }
+  
+  .groupbox-left {
+    /* Additional styles for the left groupbox (optional) */
+  }
+  
+  .groupbox-right {
+    /* Additional styles for the right groupbox (optional) */
+  }
+  
+  /* Styling for the heading inside the groupboxes */
+  .groupbox-left h3, .groupbox-right h3 {
+    margin-top: -22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9; /* Set a solid background color */
+    height: 20px;
+    width: 80px;
+  }
+
+  .lbl{
+    color: blue;
+  }
+
