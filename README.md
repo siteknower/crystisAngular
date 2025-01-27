@@ -29,7 +29,7 @@ Features
 
 ### Configuring MIME Types for .rpt Files
 
-To ensure `.rpt` files are served correctly by your web server, you may need to configure the MIME type for `.rpt` files.
+To ensure `.rpt` files are served correctly by your web server when using `crystis`, you may need to configure the MIME type for `.rpt` files. In some cases, the web server already recognizes `.rpt` files, and no additional configuration is required. However, if reports fail to load, adding the MIME type is recommended.
 
 - **For IIS**: Add the `.rpt` MIME type to the `web.config` file:
     ```xml
