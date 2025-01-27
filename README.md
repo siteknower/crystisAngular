@@ -106,7 +106,7 @@ export class Sample1Component implements OnInit {
 }
  ```
 Key Points:
-1. Data Preparation: Populate the Users array with data to be used in the report.
+1. Data Preparation: Populate your array with data to be used in the report.
 2. Report Configuration: Set the following properties for crystis:
     - tjsonstring: JSON data passed to the report.
     - tcode: Your account code.
