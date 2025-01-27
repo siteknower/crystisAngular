@@ -9,6 +9,9 @@ crystis is an Angular library that allows you to display Crystal Reports directl
 It’s the only known solution globally that bridges the gap between Crystal Reports and Angular frameworks, making it a game-changer 
 for developers looking to incorporate advanced reporting capabilities.
 
+**No Additional Installations Required:**  
+One of the key benefits of crystis is that **you do not need to have Crystal Reports or Crystal Reports Runtime installed** on your system. Everything required to generate and display reports is handled seamlessly by the library, making the setup lightweight and hassle-free.
+
 Check out the live demo of **crystis** [here](https://www.siteknower.com/sample1).
 
 Features
