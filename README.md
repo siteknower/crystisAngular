@@ -107,11 +107,11 @@ export class Sample1Component implements OnInit {
 Key Points:
 1. Data Preparation: Populate the Users array with data to be used in the report.
 2. Report Configuration: Set the following properties for crystis:
-- tjsonstring: JSON data passed to the report.
-- tcode: Your account code.
-- tucode: Your user code.
-- trptfilePath: Path to your .rpt file.
-- tDEST: Output destination ('0' for on-screen, '1' for print).
+ - tjsonstring: JSON data passed to the report.
+ - tcode: Your account code.
+ - tucode: Your user code.
+ - trptfilePath: Path to your .rpt file.
+ - tDEST: Output destination ('0' for on-screen, '1' for print).
 3. Display the Report: Call this.cs.showReport() to render the report.
 
 
