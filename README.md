@@ -20,9 +20,12 @@ Features
 - Quick and straightforward setup.
 - No need to install Crystal Reports or Crystal Reports Runtime.
 - Example components for integration:
-  1. Customer Report
-  2. Invoice Report
-  3. Demo Report
+  1. Basic sample
+     - Example of a basic Crystal Report 
+  3. Full sample
+     - In this example you can see how to set up a Crystal Report with sorting, filters and destination.
+  5. Invoice Report
+     - Example of Crystal Report displaying data from two tables
 
 Getting Started
 ---------------
