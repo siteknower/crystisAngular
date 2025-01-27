@@ -70,7 +70,7 @@ Installation
 ------------
 1. Clone this repository:
    git clone https://github.com/siteknower/crystisAngular.git
-   cd StnwAngular
+   cd CrystisAngular
 
 2. Install dependencies:
    
