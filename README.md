@@ -59,6 +59,7 @@ Setting Up crystis in a New Angular Project
 3. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the public/reports folder.
 
 4. Use the following demo codes for testing:
+
    this.cs.tcode = "DEMO1";  // your account code
    this.cs.tucode = "0000";  // your user code
 
