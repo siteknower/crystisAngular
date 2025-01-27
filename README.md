@@ -26,6 +26,9 @@ Prerequisites
 1. Angular CLI version 19.1.3 (or any version compatible with Angular).
 2. Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
    - First 30 days are free!
+  
+File Placement for .rpt Files
+-------------
 
 Installation
 ------------
