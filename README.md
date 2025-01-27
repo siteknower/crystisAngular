@@ -1,59 +1,78 @@
-# crystisAngular
+# crystisAngular Example Application
+================================
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+This repository demonstrates how to integrate Crystal Reports into Angular applications using crystis, 
+a powerful tool designed for Angular developers.
 
-## Development server
+About crystis
+-------------
+crystis is an Angular library that allows you to display Crystal Reports directly within your Angular applications. 
+It’s the only known solution globally that bridges the gap between Crystal Reports and Angular frameworks, making it a game-changer 
+for developers looking to incorporate advanced reporting capabilities, to our knowledge.
 
-To start a local development server, run:
+Features
+--------
+- Display Crystal Reports seamlessly in Angular applications.
+- Quick and straightforward setup.
+- Example components for integration:
+  1. Customer Report
+  2. Invoice Report
+  3. Demo Report
 
-```bash
-ng serve
-```
+Getting Started
+---------------
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Prerequisites
+-------------
+1. Angular CLI version 19.1.3 (or any version compatible with Angular).
+2. Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
+   - First 30 days are free!
 
-## Code scaffolding
+Installation
+------------
+1. Clone this repository:
+   git clone https://github.com/siteknower/StnwAngular.git
+   cd StnwAngular
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. Install dependencies:
+   npm install
+   npm install crystis
 
-```bash
-ng generate component component-name
-```
+Setting Up crystis in a New Angular Project
+-------------------------------------------
+1. Add the following to your app.config.ts:
+   import { provideHttpClient } from '@angular/common/http';
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   export const appConfig: ApplicationConfig = {
+     providers: [
+       provideHttpClient(),
+     ]
+   };
 
-```bash
-ng generate --help
-```
+2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the public/reports folder.
 
-## Building
+3. Use the following demo codes for testing:
+   this.cs.tcode = "DEMO1";  // your account code
+   this.cs.tucode = "0000";  // your user code
 
-To build the project run:
+Running the Application
+-----------------------
+Start the development server:
+   ng serve
 
-```bash
-ng build
-```
+Access the example app at http://localhost:4200.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Repository Usage
+----------------
+Feel free to use this repository as:
+- A guide to integrate Crystal Reports into your Angular project.
+- A base for building your own reporting solutions.
 
-## Running unit tests
+Advertising crystis
+-------------------
+This repository showcases the unique capabilities of crystis. Its unparalleled ability to integrate Crystal Reports 
+with Angular makes it a standout tool in the development landscape.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+License
+-------
+This repository is licensed under MIT License (LICENSE).
