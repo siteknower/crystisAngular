@@ -112,7 +112,7 @@ Key Points:
     - tcode: Your account code.
     - tucode: Your user code.
     - trptfilePath: Path to your .rpt file.
-    - tDEST: Output destination ('0' for on-screen, '1' for print).
+    - tDEST: Output destination ('0' for on-screen, '1' for on-printer).
 3. Display the Report: Call this.cs.showReport() to render the report.
 
 
