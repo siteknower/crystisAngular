@@ -27,6 +27,33 @@ Features
   5. Invoice Report
      - Example of a Crystal Report displaying data from two tables
 
+### Configuring MIME Types for .rpt Files
+
+To ensure `.rpt` files are served correctly by your web server, you may need to configure the MIME type for `.rpt` files.
+
+- **For IIS**: Add the `.rpt` MIME type to the `web.config` file:
+    ```xml
+    <configuration>
+      <system.webServer>
+        <staticContent>
+          <mimeMap fileExtension=".rpt" mimeType="application/octet-stream" />
+        </staticContent>
+      </system.webServer>
+    </configuration>
+    ```
+- **For Apache**: Add the following to your server configuration or `.htaccess` file:
+    ```apache
+    AddType application/octet-stream .rpt
+    ```
+- **For NGINX**: Add the following to your `mime.types` file or NGINX configuration:
+    ```nginx
+    types {
+        application/octet-stream rpt;
+    }
+    ```
+
+If your application doesn't require serving `.rpt` files directly, you can skip this step.
+
 Getting Started
 ---------------
 
@@ -37,6 +64,7 @@ Prerequisites
    - Demo account code (DEMO1) and user code (0000) are used in these examples to display demo data.
    - First 30 days are free!
 4. **No need to install Crystal Reports or its runtime. crystis takes care of everything.**
+
 
 Installation
 ------------
