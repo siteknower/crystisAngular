@@ -96,10 +96,10 @@ export class Sample1Component implements OnInit {
     });
 
     this.cs.tjsonstring = this.cjsonString;
-    this.cs.tcode = "DEMO1";  // your account code
-    this.cs.tucode = "0000";  // your user code
+    this.cs.tcode = "DEMO1";  
+    this.cs.tucode = "0000";  
     this.cs.trptfilePath = '/reports/CustomerReport1.rpt';
-    this.cs.tDEST = '0';  // '0' - on screen,  '1' - on paper
+    this.cs.tDEST = '0';  
 
     this.cs.showReport();
   }
