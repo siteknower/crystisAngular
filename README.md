@@ -61,6 +61,50 @@ Setting Up crystis in a New Angular Project
    this.cs.tcode = "DEMO1";  // your account code
    this.cs.tucode = "0000";  // your user code
 
+Quick Start Example
+-------------
+Below is a simple example demonstrating how to integrate crystis into your Angular application.
+ ```bash
+import { Component, OnInit } from '@angular/core';
+import { Crystal } from 'crystis';
+
+@Component({
+  selector: 'app-sample1',
+  templateUrl: './sample1.component.html',
+  styleUrls: ['./sample1.component.css']
+})
+export class Sample1Component implements OnInit {
+  cjsonString!: string;
+  Users: Array<{ Id: string, Name: string, Town: string, Country: string }> = [];
+
+  constructor(
+    private cs: Crystal
+  ) { }
+
+  ngOnInit(): void {
+    this.Users.push({ "Id": "ABDEN", "Name": "Maria Weiss", "Town": "Berlin", "Country": "Germany" });
+    this.Users.push({ "Id": "AXEIS", "Name": "Pedro Alvarez", "Town": "México D.F.", "Country": "Mexico" });
+    this.Users.push({ "Id": "BENOI", "Name": "Anna Tóth", "Town": "Szeged", "Country": "Hungary" });
+    this.Users.push({ "Id": "CAZLE", "Name": "Jan Eriksson", "Town": "Mannheim", "Country": "Sweden" });
+    this.Users.push({ "Id": "DRFOS", "Name": "Giulia Donatelli", "Town": "Milano", "Country": "Italia" });
+  }
+
+  showReport() {
+    this.cjsonString = JSON.stringify({
+      Users: this.Users
+    });
+
+    this.cs.tjsonstring = this.cjsonString;
+    this.cs.tcode = "DEMO1";  // your account code
+    this.cs.tucode = "0000";  // your user code
+    this.cs.trptfilePath = '/reports/CustomerReport1.rpt';
+    this.cs.tDEST = '0';  // '0' - on screen,  '1' - on paper
+
+    this.cs.showReport();
+  }
+}
+ ```
+
 File Placement for .rpt Files
 -------------
 - A For Angular projects using Angular CLI 6 and newer, place the .rpt files in the public/reports folder.
