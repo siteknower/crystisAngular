@@ -47,6 +47,7 @@ Installation
 Setting Up crystis in a New Angular Project
 -------------------------------------------
 1. Add the following to your app.config.ts:
+   
    import { provideHttpClient } from '@angular/common/http';
 
    export const appConfig: ApplicationConfig = {
@@ -55,9 +56,9 @@ Setting Up crystis in a New Angular Project
      ]
    };
 
-2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the public/reports folder.
+3. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the public/reports folder.
 
-3. Use the following demo codes for testing:
+4. Use the following demo codes for testing:
    this.cs.tcode = "DEMO1";  // your account code
    this.cs.tucode = "0000";  // your user code
 
