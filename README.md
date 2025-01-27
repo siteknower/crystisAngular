@@ -120,7 +120,7 @@ File Placement for .rpt Files
 -------------
 - A For Angular projects using Angular CLI 6 and newer, place the .rpt files in the public/reports folder.
 - For older Angular versions (before Angular CLI 6), place the .rpt files in the /assets/reports folder.
-- 
+  
 Running the Application
 -----------------------
 Start the development server:
