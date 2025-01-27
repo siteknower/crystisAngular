@@ -142,3 +142,9 @@ with Angular makes it a standout tool in the development landscape.
 License
 -------
 This repository is licensed under MIT License (LICENSE).
+
+## About Us
+This project is maintained by **[Siteknower](https://www.siteknower.com)**. For more information about our services, please visit our website.
+
+## Contact
+If you have questions, feel free to reach out through our [contact page](https://www.siteknower.com/contact).
