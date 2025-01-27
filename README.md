@@ -5,7 +5,7 @@ a powerful tool designed for Angular developers.
 
 About crystis
 -------------
-crystis is an Angular library that allows you to display Crystal Reports directly within your Angular applications. 
+crystis is an Angular library that allows you to display Crystal Reports directly within your Angular applications.   
 It’s the only known solution globally that bridges the gap between Crystal Reports and Angular frameworks, making it a game-changer 
 for developers looking to incorporate advanced reporting capabilities.
 
