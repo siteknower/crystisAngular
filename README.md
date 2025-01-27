@@ -13,6 +13,7 @@ Features
 --------
 - Display Crystal Reports seamlessly in Angular applications.
 - Quick and straightforward setup.
+- No need to install Crystal Reports or Crystal Reports Runtime.
 - Example components for integration:
   1. Customer Report
   2. Invoice Report
@@ -26,9 +27,7 @@ Prerequisites
 1. Angular CLI version 19.1.3 (or any version compatible with Angular).
 2. Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
    - First 30 days are free!
-  
-File Placement for .rpt Files
--------------
+3. No need to install Crystal Reports or its runtime. crystis takes care of everything.
 
 Installation
 ------------
@@ -59,6 +58,11 @@ Setting Up crystis in a New Angular Project
    this.cs.tcode = "DEMO1";  // your account code
    this.cs.tucode = "0000";  // your user code
 
+File Placement for .rpt Files
+-------------
+- A For Angular projects using Angular CLI 6 and newer, place the .rpt files in the public/reports folder.
+- For older Angular versions (before Angular CLI 6), place the .rpt files in the /assets/reports folder.
+- 
 Running the Application
 -----------------------
 Start the development server:
