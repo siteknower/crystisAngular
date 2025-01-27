@@ -34,6 +34,7 @@ Installation
    cd StnwAngular
 
 2. Install dependencies:
+   
    npm install
    npm install crystis
 
