@@ -27,6 +27,17 @@ Features
   5. Invoice Report
      - Example of a Crystal Report displaying data from two tables
 
+Getting Started
+---------------
+
+Prerequisites
+-------------
+1. Angular CLI version 19.1.3 (or any version compatible with Angular).
+2. Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
+   - Demo account code (DEMO1) and user code (0000) are used in these examples to display demo data.
+   - First 30 days are free!
+4. **No need to install Crystal Reports or its runtime. crystis takes care of everything.**
+
 ### Configuring MIME Types for .rpt Files
 
 To ensure `.rpt` files are served correctly by your web server when using `crystis`, you may need to configure the MIME type for `.rpt` files. In some cases, the web server already recognizes `.rpt` files, and no additional configuration is required. However, if reports fail to load, adding the MIME type is recommended.
@@ -53,17 +64,6 @@ To ensure `.rpt` files are served correctly by your web server when using `cryst
     ```
 
 **Note:** While some servers may handle `.rpt` files without additional configuration, explicitly adding the MIME type ensures compatibility and avoids potential issues.
-
-Getting Started
----------------
-
-Prerequisites
--------------
-1. Angular CLI version 19.1.3 (or any version compatible with Angular).
-2. Access to an account at siteknower.com (https://www.siteknower.com) to obtain your account code and user code.
-   - Demo account code (DEMO1) and user code (0000) are used in these examples to display demo data.
-   - First 30 days are free!
-4. **No need to install Crystal Reports or its runtime. crystis takes care of everything.**
 
 
 Installation
