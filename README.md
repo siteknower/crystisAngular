@@ -52,7 +52,7 @@ To ensure `.rpt` files are served correctly by your web server, you may need to 
     }
     ```
 
-If your application doesn't require serving `.rpt` files directly, you can skip this step.
+**Note:** While some servers may handle `.rpt` files without additional configuration, explicitly adding the MIME type ensures compatibility and avoids potential issues.
 
 Getting Started
 ---------------
