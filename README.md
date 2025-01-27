@@ -25,7 +25,7 @@ Features
   3. Full sample
      - In this example you can see how to set up a Crystal Report with sorting, filters and destination.
   5. Invoice Report
-     - Example of Crystal Report displaying data from two tables
+     - Example of a Crystal Report displaying data from two tables
 
 Getting Started
 ---------------
