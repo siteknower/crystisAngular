@@ -61,7 +61,6 @@ Setting Up crystis in a New Angular Project
 4. Use the following demo codes for testing:
 
    this.cs.tcode = "DEMO1";  // your account code
-   
    this.cs.tucode = "0000";  // your user code
 
 Quick Start Example
