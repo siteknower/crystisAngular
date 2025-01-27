@@ -35,7 +35,7 @@ Prerequisites
 Installation
 ------------
 1. Clone this repository:
-   git clone https://github.com/siteknower/StnwAngular.git
+   git clone https://github.com/siteknower/crystisAngular.git
    cd StnwAngular
 
 2. Install dependencies:
