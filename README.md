@@ -36,6 +36,7 @@ Installation
 2. Install dependencies:
    
    npm install
+   
    npm install crystis
 
 Setting Up crystis in a New Angular Project
