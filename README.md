@@ -3,7 +3,7 @@
 This repository demonstrates how to integrate Crystal Reports into Angular applications using crystis, 
 a powerful tool designed for Angular developers.
 
-About crystis
+About crystis for Angular
 -------------
 crystis is an Angular library that allows you to display Crystal Reports directly within your Angular applications.   
 It’s the only known solution globally that bridges the gap between Crystal Reports and Angular frameworks, making it a game-changer 
