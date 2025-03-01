@@ -77,9 +77,10 @@ Installation
    npm install  
    **npm install crystis**
 
-&nbsp; &nbsp; If you have any dependency conflicts, you may use:   
-&nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --force or   
-&nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --legacy-peer-deps
+&nbsp; &nbsp; &nbsp; &nbsp; If you have any dependency conflicts, you may use:   
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --force or   
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --legacy-peer-deps
 
 
 Setting Up crystis in a New Angular Project
