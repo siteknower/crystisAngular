@@ -77,6 +77,10 @@ Installation
    npm install  
    **npm install crystis**
 
+If you have any dependency conflicts, you may use:
+  npm install crystis --force or
+  npm install crystis --legacy-peer-deps
+
 Setting Up crystis in a New Angular Project
 -------------------------------------------
 1. Add the following to your app.config.ts:
