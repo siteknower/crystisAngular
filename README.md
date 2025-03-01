@@ -79,7 +79,8 @@ Installation
 
 &nbsp; &nbsp; &nbsp; &nbsp; If you have any dependency conflicts, you may use:   
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --force or   
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --force 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or   
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; npm install crystis --legacy-peer-deps
 
 
