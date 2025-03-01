@@ -69,7 +69,7 @@ To ensure `.rpt` files are served correctly by your web server when using `cryst
 Installation
 ------------
 1. Clone this repository:
-   git clone https://github.com/siteknower/crystisAngular.git
+  git clone https://github.com/siteknower/crystisAngular.git
    cd CrystisAngular
 
 2. Install dependencies:
@@ -78,8 +78,8 @@ Installation
    **npm install crystis**
 
 If you have any dependency conflicts, you may use:   
-   npm install crystis --force or   
-   npm install crystis --legacy-peer-deps
+  npm install crystis --force or   
+  npm install crystis --legacy-peer-deps
 
 Setting Up crystis in a New Angular Project
 -------------------------------------------
