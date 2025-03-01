@@ -78,11 +78,10 @@ Installation
    **npm install crystis**
 
 If you have any dependency conflicts, you may use:   
+
   npm install crystis --force or   
   npm install crystis --legacy-peer-deps
 
-  this.cs.tcode = "DEMO1";  // your account code  
-  this.cs.tucode = "0000";  // your user code
 
 Setting Up crystis in a New Angular Project
 -------------------------------------------
