@@ -147,6 +147,7 @@ Key Points:
     - trptfilePath: Path to your .rpt file.
     - tDEST: Output destination ('0' for on-screen, '1' for on-printer).
 3. Display the Report: Call this.cs.showReport() to render the report.
+4. Alternatively, you can get the URL of the report with this.cs.getReportUrl() and display it in your application in some other way.
 
 
 File Placement for .rpt Files
