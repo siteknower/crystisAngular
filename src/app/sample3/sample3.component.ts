@@ -44,7 +44,7 @@ export class Sample3Component implements OnInit {
     this.cs.tjsonstring = this.cjsonString;
     this.cs.tcode = "DEMO1";  // your account code
     this.cs.tucode = "0000";  // your user code
-    this.cs.trptfilePath = '/reports/InvoiceReport.rpt'; 
+    this.cs.trptfilePath = '/assets/reports/InvoiceReport.rpt'; 
 
     // this.cs.tSortTableName = 'Users';
     // this.cs.tSortField1 = 'Country';

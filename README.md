@@ -88,7 +88,7 @@ Setting Up crystis in a New Angular Project
        ]
    };
 
-3. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the public/reports folder.
+3. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the asset/reports folder.
 
 4. Use the following demo codes for testing:
 
@@ -131,7 +131,7 @@ export class Sample1Component implements OnInit {
     this.cs.tjsonstring = this.cjsonString;
     this.cs.tcode = "DEMO1";  
     this.cs.tucode = "0000";  
-    this.cs.trptfilePath = '/reports/CustomerReport1.rpt';
+    this.cs.trptfilePath = '/assets/reports/CustomerReport1.rpt';
     this.cs.tDEST = '0';  
 
     this.cs.showReport();
@@ -151,8 +151,7 @@ Key Points:
 
 File Placement for .rpt Files
 -------------
-- A For Angular projects using Angular CLI 6 and newer, place the .rpt files in the public/reports folder.
-- For older Angular versions (before Angular CLI 6), place the .rpt files in the /assets/reports folder.
+Place the .rpt files in the /assets/reports folder.
   
 Running the Application
 -----------------------
