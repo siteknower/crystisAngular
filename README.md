@@ -82,17 +82,17 @@ Setting Up crystis in a New Angular Project
 1. Add the following to your app.config.Crystis supports Angular 12 and above. Setup depends on your Angular version:
 
   🔹 Angular 12–14 (NgModule-based)
-  In your app.module.ts, add:
+     In your app.module.ts, add:
 
-```xml
-  import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+     ```xml
+     import { NgModule } from '@angular/core';
+     import { HttpClientModule } from '@angular/common/http';
 
-@NgModule({
-  imports: [
-    HttpClientModule,
-  ],
-})
+     @NgModule({
+       imports: [
+         HttpClientModule,
+       ],
+     })
   ```
 export class AppModule { }
 
