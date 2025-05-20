@@ -79,7 +79,7 @@ Installation
 
 Setting Up crystis in a New Angular Project
 -------------------------------------------
-1. Add the following to your app.config.Crystis supports Angular 12 and above. Setup depends on your Angular version:
+1. Crystis supports Angular 12 and above. Setup depends on your Angular version:
 
     🔹 Angular 12–14 (NgModule-based)
      In your app.module.ts, add:
