@@ -84,6 +84,7 @@ Setting Up crystis in a New Angular Project
   🔹 Angular 12–14 (NgModule-based)
   In your app.module.ts, add:
 
+```xml
   import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -92,7 +93,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
   ],
 })
+  ```
 export class AppModule { }
+
 
 🔹 Angular 15 and above (Standalone API)
 In your app.config.ts, add:
