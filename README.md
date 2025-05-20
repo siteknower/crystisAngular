@@ -109,7 +109,6 @@ Setting Up crystis in a New Angular Project
            provideHttpClient(),
          ],
        };
-       ```
 
 
 2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the assets/reports folder.
