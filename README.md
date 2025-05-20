@@ -84,7 +84,7 @@ Setting Up crystis in a New Angular Project
   🔹 Angular 12–14 (NgModule-based)
      In your app.module.ts, add:
 
-     ```xml
+     ```bash
      import { NgModule } from '@angular/core';
      import { HttpClientModule } from '@angular/common/http';
 
@@ -100,15 +100,14 @@ Setting Up crystis in a New Angular Project
   🔹 Angular 15 and above (Standalone API)
      In your app.config.ts, add:
 
-    
-     import { ApplicationConfig } from '@angular/core';
-     import { provideHttpClient } from '@angular/common/http';
+       import { ApplicationConfig } from '@angular/core';
+       import { provideHttpClient } from '@angular/common/http';
 
-     export const appConfig: ApplicationConfig = {
-       providers: [
-         provideHttpClient(),
-       ],
-     };
+       export const appConfig: ApplicationConfig = {
+         providers: [
+           provideHttpClient(),
+         ],
+       };
      
 
 
