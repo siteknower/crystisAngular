@@ -93,24 +93,23 @@ Setting Up crystis in a New Angular Project
          HttpClientModule,
        ],
      })
-  ```
-export class AppModule { }
+     
+     export class AppModule { }
+     ```
 
+  🔹 Angular 15 and above (Standalone API)
+     In your app.config.ts, add:
 
-🔹 Angular 15 and above (Standalone API)
-In your app.config.ts, add:
+     ```
+     import { ApplicationConfig } from '@angular/core';
+     import { provideHttpClient } from '@angular/common/http';
 
-import { ApplicationConfig } from '@angular/core';
-import { provideHttpClient } from '@angular/common/http';
-
-export const appConfig: ApplicationConfig = {
-  providers: [
-    provideHttpClient(),
-  ],
-};
-
-
-
+     export const appConfig: ApplicationConfig = {
+       providers: [
+         provideHttpClient(),
+       ],
+     };
+      ```
 
 2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the assets/reports folder.
 
