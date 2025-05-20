@@ -79,18 +79,39 @@ Installation
 
 Setting Up crystis in a New Angular Project
 -------------------------------------------
-1. Add the following to your app.config.ts:
-   
-   import { provideHttpClient } from '@angular/common/http';  
-   export const appConfig: ApplicationConfig = {
-       providers: [
-         provideHttpClient(),
-       ]
-   };
+1. Add the following to your app.config.Crystis supports Angular 12 and above. Setup depends on your Angular version:
 
-3. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the assets/reports folder.
+  🔹 Angular 12–14 (NgModule-based)
+  In your app.module.ts, add:
 
-4. Use the following demo codes for testing:
+  import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+@NgModule({
+  imports: [
+    HttpClientModule,
+  ],
+})
+export class AppModule { }
+
+🔹 Angular 15 and above (Standalone API)
+In your app.config.ts, add:
+
+import { ApplicationConfig } from '@angular/core';
+import { provideHttpClient } from '@angular/common/http';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideHttpClient(),
+  ],
+};
+
+
+
+
+2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the assets/reports folder.
+
+2. Use the following demo codes for testing:
 
    this.cs.tcode = "DEMO1";  // your account code  
    this.cs.tucode = "0000";  // your user code
