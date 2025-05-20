@@ -100,7 +100,7 @@ Setting Up crystis in a New Angular Project
   🔹 Angular 15 and above (Standalone API)
      In your app.config.ts, add:
 
-     ```
+    
      import { ApplicationConfig } from '@angular/core';
      import { provideHttpClient } from '@angular/common/http';
 
@@ -109,11 +109,8 @@ Setting Up crystis in a New Angular Project
          provideHttpClient(),
        ],
      };
-      ```
+     
 
-       ```apache
-         AddType application/octet-stream .rpt
-       ```
 
 2. Place your .rpt files (e.g., CustomerReport1.rpt, InvoiceReport.rpt) in the assets/reports folder.
 
