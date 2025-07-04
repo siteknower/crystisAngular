@@ -27,6 +27,12 @@ export class Sample2Component implements OnInit {
     const storedUsers = localStorage.getItem('Users');
     if (storedUsers) {
       this.Users = JSON.parse(storedUsers);
+
+      const storedchkslctd = localStorage.getItem('chkslctd');
+      this.chkselected = storedchkslctd ? storedchkslctd === '1' : false;
+
+      const storedoptctd = localStorage.getItem('optctd');
+      this.optselected = storedoptctd === '1' ? 'optscreen' : 'optpaper';
     } else {
       // Initialize with default data
       this.Users = [
@@ -133,6 +139,14 @@ export class Sample2Component implements OnInit {
     }
   }
 
+  formulaclick(): void {
+    localStorage.setItem('chkslctd',  this.chkselected ? '0' : '1');
+  }
+
+  optclick(index: number): void {
+    localStorage.setItem('optctd',  index.toString());
+
+  }
 }
 
 

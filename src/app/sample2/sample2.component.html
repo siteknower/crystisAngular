@@ -41,10 +41,10 @@
       <h3>Destination</h3>
       <!-- Content for left groupbox -->
       <div> 
-        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optscreen" />on screen </label> 
+        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optscreen" (click)="optclick(1)"/>on screen </label> 
       </div> 
       <div> 
-        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optpaper" />on paper </label> 
+        <label> <input type="radio" name="options" [(ngModel)]="optselected" value="optpaper" (click)="optclick(2)"/>on paper </label> 
       </div>
     </div>
     
@@ -52,7 +52,7 @@
       <h3>Formula</h3>
       <!-- Content for right groupbox -->
       <label>Country = Germany</label>
-      <div> <label> <input type="checkbox" [(ngModel)]="chkselected" /> include formula </label> </div>
+      <div> <label> <input type="checkbox" [(ngModel)]="chkselected" (click)="formulaclick()" /> include formula </label> </div>
 
     </div>
   </div>
