@@ -33,6 +33,9 @@ export class Sample2Component implements OnInit {
 
       const storedoptctd = localStorage.getItem('optctd');
       this.optselected = storedoptctd === '1' ? 'optscreen' : 'optpaper';
+   
+      const storeddirection = localStorage.getItem('direction');
+      this.direction = storeddirection ?? 'ascending';
     } else {
       // Initialize with default data
       this.Users = [
@@ -62,8 +65,12 @@ export class Sample2Component implements OnInit {
 
     this.cs.tSortTableName = 'Users';
     this.cs.tSortField1 = this.currentSortColumn;
-    // this.cs.tSortDirection = '1';
-   
+    if (this.direction == 'ascending') {
+      this.cs.tSortDirection = '1'
+    } else{
+      this.cs.tSortDirection = '2'
+    }   
+
     // this.cs.tSortField2 = '';
     // this.cs.tSortField3 = '';
     // this.cs.tSortDirection = '';
@@ -104,7 +111,6 @@ export class Sample2Component implements OnInit {
     } else {
       this.isAscending = true;
       this.direction = 'ascending';
-      this.cs.tSortDirection = '1';
       this.currentSortColumn = column;
     }
 
@@ -117,6 +123,9 @@ export class Sample2Component implements OnInit {
       if (valueA > valueB) return this.isAscending ? 1 : -1;
       return 0;
     });
+
+    localStorage.setItem('currentSortColumn',  this.currentSortColumn);
+    localStorage.setItem('direction',  this.direction);
   }
 
   addRow(id: string, name: string, town: string, country: string, inputs: HTMLInputElement[]): void {
