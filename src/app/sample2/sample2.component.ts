@@ -34,6 +34,9 @@ export class Sample2Component implements OnInit {
       const storedoptctd = localStorage.getItem('optctd');
       this.optselected = storedoptctd === '1' ? 'optscreen' : 'optpaper';
    
+      const storeSortColumn = localStorage.getItem('currentSortColumn');
+      this.currentSortColumn = storeSortColumn ?? 'Id';
+
       const storeddirection = localStorage.getItem('direction');
       this.direction = storeddirection ?? 'ascending';
     } else {
