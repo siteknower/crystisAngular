@@ -1,4 +1,4 @@
-# crystisAngular Example Application
+# Crystis Angular Example Application
 
 This repository demonstrates how to integrate Crystal Reports into Angular applications using crystis for Angular, 
 a powerful tool designed for Angular developers.
