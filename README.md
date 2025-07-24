@@ -162,7 +162,7 @@ Access the example app at http://localhost:4200.
 
 Video Tutorial
 -----------------------
-[How to Show Crystal Reports in Angular](https://www.youtube.com/watch?v=Jkg1_WljZZk)
+[How to Show Crystal Reports in Angular](https://www.youtube.com/watch?v=tLazMzhsj4U)
 
 Repository Usage
 ----------------
